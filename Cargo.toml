@@ -1,0 +1,16 @@
+[package]
+name = "chaplin-click"
+version = "0.1.0"
+edition = "2021"
+description = "Bridge between Chaplin lip-reading and screen-click for mutism-friendly mouse replacement"
+
+[dependencies]
+anyhow = "1"
+evdev = "0.12"
+inotify = "0.10"
+libc = "0.2"
+signal-hook = "0.3"
+
+[profile.release]
+opt-level = 2
+strip = true
